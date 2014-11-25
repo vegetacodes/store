@@ -22,9 +22,13 @@ end
 
 gem 'jquery-rails'
 
-gem "spring", group: :development
+# gem "spring", group: :development
 
 
+group :development do
+  gem 'spring'
+  gem 'pry'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

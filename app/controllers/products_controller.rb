@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
-
+    @count = counter
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
